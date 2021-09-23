@@ -1,17 +1,13 @@
 import React from "react";
 
 const Square = (props) => {
-  const { value, onClick, winner } = props;
-  //const style = value ? `squares ${value}` : `squares`;
-  const style = winner ? `squares winner` : `squares`;
-  //console.log(value);
-
+  const { value, onClick, styledClass } = props;
   return (
-    <button className={style} onClick={onClick}>
+    <button className={styledClass} onClick={onClick}>
       {value}
     </button>
   );
-  
+
 };
 
 export default Square;

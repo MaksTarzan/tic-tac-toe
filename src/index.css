@@ -36,6 +36,12 @@ body {
   outline: none;
 }
 
+.squares.winner {
+  background: green;
+  color: white;
+}
+
+
 .info-wrapper {
   display: flex;
   flex-direction: column;

@@ -36,12 +36,12 @@ const Game = () => {
         </li>
       );
     });
-console.log(status);
+    
   return (
     <div className="game">
       <Board squares={history[stepNumber]} onClick={handleClick} winner={winner}/>
       <div className="info-wrapper">
-        <h3>{winner ? "Winner: Player " + winner : 
+        <h3>{winner ? "Winner: Player " + winner.squares : 
         history.length === 10 ? "Draw" : 
         "Next Player: " + status}</h3>
         <div>
